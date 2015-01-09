@@ -8,16 +8,22 @@ from email.mime.text import MIMEText
 
 # send a mail with title and content to a list of email
 def send_mail(to_mail, title, content):
+    # the parameter of sending mail
     mail_host="mail.rong360.com"
     mail_user="user"
     mail_pass="password"
     mail_postfix="rong360.com"
 
+    # from mail
     from_mail = mail_user + "<" + mail_user + "@" + mail_postfix + ">"
+
+    # the message
     message = MIMEText(content, _charset="utf-8")
     message['Subject'] = title
     message['From'] = from_mail
     message['To'] = to_mail
+
+    # send the mail
     try:
         smtp = smtplib.SMTP()
         smtp.connect(mail_host)

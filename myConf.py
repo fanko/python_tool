@@ -8,11 +8,13 @@ import ConfigParser
 
 # class Config
 class Config:
+    # init the class
     def __init__(self, path):
         self.path = path
         self.cf = ConfigParser.ConfigParser()
         self.cf.read(self.path)
 
+    # get a string
     def get(self, field, key):
         result = None
         try:
@@ -21,6 +23,7 @@ class Config:
             pass
         return result
 
+    # get an integer
     def get_int(self, field, key):
         result = None
         try:
@@ -29,6 +32,7 @@ class Config:
             pass
         return result
 
+    # get a float
     def get_float(self, field, key):
         result = None
         try:
@@ -37,6 +41,7 @@ class Config:
             pass
         return result
 
+    # get a bool
     def get_bool(self, field, key):
         result = None
         try:
