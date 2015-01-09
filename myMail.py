@@ -10,8 +10,8 @@ from email.mime.text import MIMEText
 def send_mail(to_mail, title, content):
     # the parameter of sending mail
     mail_host="mail.rong360.com"
-    mail_user="user"
-    mail_pass="password"
+    mail_user="cro_automail@rong360.com"
+    mail_pass="izrgblhg84"
     mail_postfix="rong360.com"
 
     # from mail
