@@ -1,5 +1,5 @@
 # encoding: utf-8
-# liuqiwen@rong360.com
+# fanko24@gmail.com
 
 
 import smtplib
