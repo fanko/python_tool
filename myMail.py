@@ -1,5 +1,5 @@
 # encoding: utf-8
-# fanko24@gmail.com
+# author: fanko24@gmail.com
 
 
 import smtplib
